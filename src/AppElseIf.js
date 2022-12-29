@@ -5,13 +5,17 @@ import { useState } from "react";
 
 function App() {
 
-  const [loguin, setLoguin] = useState(null);
+  const [loguin, setLoguin] = useState("juan");
+
+  function condicional () {
+    if (loguin === null) return <Home />;
+    else return  <Loguin />
+  }
 
   return (
     <div className="App">
       <header className="App-header">
-        {loguin ? <Loguin /> : <Home />}
-        
+        {condicional()}        
       </header>
     </div>
   );

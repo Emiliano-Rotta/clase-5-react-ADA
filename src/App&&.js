@@ -10,7 +10,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {loguin ? <Loguin /> : <Home />}
+        <Home />
+        {loguin && <Loguin  /> }
         
       </header>
     </div>

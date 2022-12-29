@@ -5,7 +5,7 @@ import { useState } from "react";
 
 function App() {
 
-  const [loguin, setLoguin] = useState(null);
+  const [loguin, setLoguin] = useState("juan");
 
   return (
     <div className="App">
